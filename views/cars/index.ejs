@@ -13,6 +13,9 @@
     </header>
 
     <main>
+      <% if (cars.length === 0) {%>
+      <p>No Cars Available</p>
+      <% } else {%>
       <ul class="car-list">
         <% cars.forEach(car => { %>
         <li class="car-card">
@@ -23,6 +26,9 @@
         </li>
         <% }); %>
       </ul>
+      <% }%>
     </main>
+    <br />
+    <a class="btn" href="/">Back To Landing Page</a>
   </body>
 </html>
