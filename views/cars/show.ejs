@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/stylesheets/style.css" />
+    <title><%= car.make %> <%= car.model %></title>
+  </head>
+  <body>
+    <main class="car-details">
+      <h1 class="car-title"><%= car.make %> <%= car.model %></h1>
+
+      <div class="actions">
+        <form
+          action="/cars/<%= car._id %>?_method=DELETE"
+          method="POST"
+          class="delete-form"
+        >
+          <button type="submit" class="btn btn-danger">Delete</button>
+        </form>
+
+        <a href="/cars/<%= car._id %>/edit" class="btn btn-edit">Edit</a>
+        <a href="/cars" class="btn btn-back">Back to Cars</a>
+      </div>
+    </main>
+  </body>
+</html>

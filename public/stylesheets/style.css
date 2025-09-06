@@ -1,0 +1,180 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  background: linear-gradient(135deg, #f1f8e9, #dcedc8);
+  color: #2e4a2e;
+  min-height: 100vh;
+  padding: 30px;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 30px;
+}
+
+.page-title {
+  font-size: 2.5rem;
+  color: #2f462f;
+}
+
+.btn {
+  padding: 10px 20px;
+  background-color: #4caf50;
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  border-radius: 25px;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.btn:hover {
+  background-color: #388e3c;
+  transform: translateY(-2px);
+}
+
+.car-list {
+  list-style: none;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+  gap: 20px;
+}
+
+.car-card {
+  background: white;
+  padding: 20px;
+  border-radius: 15px;
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.car-card:hover {
+  transform: scale(1.05);
+  box-shadow: 0 8px 18px rgba(0, 0, 0, 0.15);
+}
+
+.car-card a {
+  text-decoration: none;
+  color: #2f462f;
+}
+
+.car-card h2 {
+  font-size: 1.5rem;
+  margin-bottom: 5px;
+}
+
+.car-card p {
+  font-size: 1.1rem;
+  color: #4b674b;
+}
+
+.car-details {
+  background: #fff;
+  padding: 40px 30px;
+  border-radius: 18px;
+  box-shadow: 0 8px 24px rgba(44, 62, 80, 0.08);
+  max-width: 500px;
+  margin: 40px auto;
+  text-align: center;
+}
+
+.car-title {
+  font-size: 2.2rem;
+  color: #388e3c;
+  margin-bottom: 25px;
+  letter-spacing: 1px;
+}
+
+.actions {
+  display: flex;
+  justify-content: center;
+  gap: 18px;
+  margin-top: 30px;
+}
+
+.btn-danger {
+  background: #e53935;
+  color: #fff;
+}
+
+.btn-danger:hover {
+  background: #b71c1c;
+}
+
+.btn-edit {
+  background: #ffb300;
+  color: #fff;
+}
+
+.btn-edit:hover {
+  background: #ff8f00;
+}
+
+.btn-back {
+  background: #607d8b;
+  color: #fff;
+}
+
+.btn-back:hover {
+  background: #455a64;
+}
+
+.form-container {
+  background: #fff;
+  max-width: 420px;
+  margin: 50px auto;
+  padding: 36px 28px;
+  border-radius: 16px;
+  box-shadow: 0 8px 24px rgba(44, 62, 80, 0.08);
+}
+
+.form-title {
+  text-align: center;
+  color: #388e3c;
+  margin-bottom: 28px;
+  font-size: 2rem;
+  letter-spacing: 1px;
+}
+
+.main-form .form-group {
+  margin-bottom: 22px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.main-form label {
+  font-weight: 600;
+  margin-bottom: 7px;
+  color: #2e4a2e;
+}
+
+.main-form input[type="text"] {
+  padding: 9px 12px;
+  border: 1px solid #bdbdbd;
+  border-radius: 7px;
+  width: 100%;
+  font-size: 1rem;
+  background: #f9fbe7;
+  transition: border 0.2s;
+}
+
+.main-form input[type="text"]:focus {
+  border: 1.5px solid #388e3c;
+  outline: none;
+}
+
+.form-actions {
+  display: flex;
+  justify-content: space-between;
+  gap: 12px;
+  margin-top: 18px;
+}

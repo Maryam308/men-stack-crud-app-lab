@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="stylesheets/style.css" />
+    <title>Browse Cars</title>
+  </head>
+  <body>
+    <header>
+      <h1 class="page-title">🚘 All Cars</h1>
+      <a class="btn" href="/cars/new">+ Add a New Car</a>
+    </header>
+
+    <main>
+      <ul class="car-list">
+        <% cars.forEach(car => { %>
+        <li class="car-card">
+          <a href="/cars/<%= car._id %>">
+            <h2><%= car.make %></h2>
+            <p><%= car.model %></p>
+          </a>
+        </li>
+        <% }); %>
+      </ul>
+    </main>
+  </body>
+</html>

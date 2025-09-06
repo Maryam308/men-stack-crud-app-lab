@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/stylesheets/style.css" />
+    <title>Add Car</title>
+  </head>
+  <body>
+    <main class="form-container">
+      <h2 class="form-title">Add a New Car</h2>
+      <form action="/cars" method="post" class="main-form">
+        <div class="form-group">
+          <label for="make">Make:</label>
+          <input type="text" name="make" id="make" required />
+        </div>
+        <div class="form-group">
+          <label for="model">Model:</label>
+          <input type="text" name="model" id="model" required minlength="3" />
+        </div>
+        <div class="form-actions">
+          <input type="submit" value="Add Car" class="btn btn-edit" />
+          <a href="/cars" class="btn btn-back">Cancel</a>
+        </div>
+      </form>
+    </main>
+  </body>
+</html>
